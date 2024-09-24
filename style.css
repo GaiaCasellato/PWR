@@ -1,0 +1,521 @@
+/* Stile generale della pagina */
+body {
+    font-family: Tahoma, sans-serif;
+    background-color:  #0D1B2A;  /* #0D1B2A; */
+    color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Qui dedico lo spazio all'eventuale ultimo POST-IT della persona loggata */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 0.08rem solid #CBE5F2;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffffff;  
+    text-align: center;
+    padding: 0.625rem;
+}
+
+header p {
+    color: #ffffff;
+    margin-right: 1.125rem;
+    font-size: 1.5em;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+}
+/*Ho diviso lo spazio del main in due colonne una di destra in cui ho voluto inserire la navigazione tra le pagine */
+.right-column {
+    margin: 6rem;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+/* A sinistra invece vi è la presentazione del social network*/
+.left-column {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+/* Qui invece ci sono le specifiche del logo */
+.logo{
+    width: 10.5rem;
+    height: auto;
+    margin: 0 2rem;
+}
+
+.logo_pagine {
+    width: 3.5rem;
+    height: auto;
+    margin: 0 2rem;
+}
+/* Contenitore delle specifiche per registrazione e accesso*/
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25rem;
+   
+}
+/* Elenco delle pagine di navigazione */
+.tasto_nav {
+    font-size: 1.125em;
+    margin: 1rem 0;
+    text-align: center;
+    padding: 0.625rem 1.25rem;
+    margin: 0.625rem 0;
+    color: #0D1B2A; 
+    text-decoration: none ;
+    border: 0.06rem solid #0D1B2A; 
+    border-radius: 1rem;
+    background-color: #CBE5F2;
+    
+}
+a {
+    color: #0D1B2A;
+    text-decoration: none ;
+}
+
+span {
+    color: rgb(137, 137, 137) ;
+}
+.titolo{
+    margin: 0;
+    font-size: 1.25em;
+    color: #ffffff;  
+    text-align: center;
+}
+
+
+.form-container {
+    background-color: #0D1B2A; 
+    font-size: 20px;
+    border-radius: 0.625rem;
+    width: 100%;
+    max-width: 25rem;
+    text-align: center;
+}
+.signup-container p, .form-container label, .form-container p {
+    font-size: 1.2em;
+    margin: 0.625rem 0;
+    text-align: center;
+}
+
+.btn {
+    background-color:#CBE5F2; 
+    color: #000000; 
+    border: none;
+    text-align: center;
+    padding: 0.625rem 1.25rem;
+    margin: 0.625rem 0;
+    cursor: pointer;
+    border-radius: 1.25rem;
+    font-size: 1em;
+}
+
+.signup-container .btn:hover, .container .btn:hover {
+    background-color: #1da1f2;
+}
+
+.container .btn-registrazione:hover{
+    background-color: #1da1f2; 
+}
+ul.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 1.25rem auto;
+    max-width: 37.5rem;
+}
+
+ul.dropdown-menu li {
+    padding: 0.625rem 0;
+    border-bottom: 1px solid  #444444; 
+    color: #cdcccc;
+}
+
+.data_filtro {
+    font-size: 1.25rem;
+}
+
+/* Footer */
+footer {
+    font-style: italic;
+    text-align: center;
+    padding: 1.25rem;
+    width: 100%;
+    background-color: #000000; 
+    border-top: 0.06rem solid  #444444; 
+    color: #e2e0e0; 
+    display: flex;
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+footer p {
+    margin: 0.625rem;
+    padding: 0.125rem;
+}
+
+/* Titolo sezione */
+h3 { font-size: 2rem;
+    text-align: center;
+}
+
+
+.form_registrazione {
+    text-align: left;
+    width: 100%;
+    display: flex;
+}
+
+/* Stile del form di registrazione */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-container label {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.3125rem;
+}
+
+.form-container input {
+    padding: 0.625rem;
+    margin-bottom: 0.9375rem;
+    border: 1px solid  #444444;
+    border-radius: 0.3125rem;
+    background-color: #000000;
+    color: #ffffff;
+}
+.container {
+    background-color: #0D1B2A; 
+    font-size: 20px;
+    border-radius: 0.625rem;
+    width: 100%;
+    max-width: 25rem;
+    text-align: center;
+}
+
+.form-group {
+    text-align: left;
+    width: 100%;
+    padding: 0.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #eaeaea;
+    width: 100%;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #1877f2; 
+}
+
+/* Stili per i tweet */
+.tweet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.25rem;
+    width: 60%;
+    max-width: 50rem;
+}
+
+.tweet {
+    border: 0.125rem solid #ffffff;
+    border-radius: 1rem;
+    background-color: #152a30;
+    color: #ffffff;
+    padding: 0.9375rem;
+    margin: 0.625rem 0; 
+    width: 100%;
+    max-width: 31.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5); /* Effetto ombra */
+}
+
+.tweet .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.tweet .author {
+    color: #78d9eb; 
+    font-size: 1.2em;
+}
+
+.tweet .date {
+    font-size: 0.9em;
+    color: #a9a9a9;
+}
+
+
+.tweet .content {
+    padding: 0.625rem 0;
+    font-size: 1em;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+.tweet_alto_sx {
+    border: 0.125rem solid #ffffff;
+    border-radius: 1rem;
+    background-color: #152a30;
+    color: #ffffff;
+    padding: 0.625rem;
+    margin: 0.625rem 0; 
+    margin-left: 3rem;
+    width: auto;
+}
+
+.last-tweet {
+    padding: 0.625rem 0;
+    font-size: 1em;
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+}
+
+.username {
+    color: #78d9eb; 
+    font-size: 0.9em;
+}
+.err {
+    padding: 1rem;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+.error-message { 
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.success {
+    padding: 1rem;
+    color: rgb(39, 204, 17);
+    font-weight: bold;
+    text-align: center;
+}
+
+.no-tweets {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 1.2em;
+}
+
+
+/* Stili per dispositivi mobili */
+@media only screen and (max-width: 37.5rem) {
+    body {
+        padding: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0.625rem;
+    }
+
+    header h1 {
+        font-size: 2em;
+        margin-bottom: 0.625rem;
+    }
+
+    header p {
+        font-size: 1.25em;
+        margin-right: 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-column {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .left-column {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .tweet-container {
+        width: 100%;
+        margin: 0.625rem 0;
+    }
+
+    .tweet {
+        width: 100%;
+        max-width: none;
+        margin: 0.625rem 0;
+    }
+
+    .tweet_alto_sx {
+        width: 80%;
+        margin-left: 0;
+        margin: 0.625rem 0;
+    }
+
+    .logo, .logo_pagine {
+        width: 7rem;
+        height: auto;
+    }
+
+    .btn, .tasto_nav {
+        font-size: 1em;
+        padding: 0.5rem 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    footer p {
+        margin: 0.625rem 0;
+    }
+
+    .form-container, .signup-container {
+        width: 100%;
+        padding: 0.625rem;
+    }
+
+    .form-container input {
+        width: 100%;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+}
+
+
+@media print {
+    /* Imposta uno sfondo bianco per una stampa pulita */
+    body {
+        background-color: #ffffff;
+        color: #000000; 
+        font-family: Tahoma, sans-serif;
+    }
+
+    /* Nasconde elementi non necessari alla stampa */
+    header, footer, .right-column, .btn, .tasto_nav, .logo, .logo_pagine, .err, .error-message, .success, .signup-container, .form-container {
+        display: none;
+    }
+
+  
+    main {
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .left-column {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .tweet-container {
+        width: 100%;
+        margin: 0;
+        box-shadow: none; 
+        border: none;
+    }
+
+    .tweet {
+        background-color: #ffffff; 
+        color: #000000; 
+        border: 1px solid #000000; 
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .tweet .header, .tweet .content, .tweet .author, .tweet .date {
+        color: #000000; 
+    }
+
+    /* Rimuove tutte le decorazioni dai link e imposta il colore del testo */
+    a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    /* Rimuove le decorazioni e i colori di sfondo dai pulsanti */
+    .btn {
+        background-color: #ffffff;
+        color: #000000;
+        border: none;
+    }
+
+    /* Modifica dei margini e dei padding per ottimizzare lo spazio su pagina stampata */
+    .tweet-container, .left-column {
+        margin: 0;
+        padding: 0;
+    }
+
+    .tweet {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    
+    .no-tweets, .username, .data_filtro {
+        color: #000000; 
+    }
+}
